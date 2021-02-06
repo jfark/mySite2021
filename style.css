@@ -1,0 +1,536 @@
+* { box-sizing: border-box; }
+
+@font-face {
+  font-family: Calibre-Medium;
+  src: url(fonts/Calibre-Medium.otf);
+}
+
+@font-face {
+  font-family: Calibre-Light;
+  src: url(fonts/Calibre-Light.otf);
+}
+
+@font-face {
+  font-family: MiloSerifOT-Bold;
+  src: url(fonts/MiloSerifOT-Bold.otf);
+}
+
+@font-face {
+	font-family: Agrandir-GrandHeavy;
+	src: url(fonts/Agrandir-GrandHeavy.otf);
+}
+
+html {
+    font-family: 'Calibre-Medium', sans-serif;
+	font-family: 'MiloSerifOT-Bold', serif;
+}
+
+body {
+    font-family: 'Calibre-Regular', sans-serif;
+    background: url("");
+    background-size: 100%;
+	background-color: #fbeae1;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	padding: 5%;
+	
+}
+
+.room-name {
+	display: block;
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	color: #fa4c25;
+}
+
+.site-directions {
+    font-family: 'Calibre-Light', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    margin: 0;
+	padding: 3%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+/*.opacity-layer {
+	background: hsla(22, 80%, 93%, .80);
+	position: sticky;
+	top: 0;
+	margin-top: 100%;
+	padding-bottom: 100%;
+	height: 200%;
+}*/
+
+.opacity-layer {
+	background: hsla(22, 80%, 93%, .65);
+	position: sticky;
+	top: 0;
+	height: 200%;
+}
+
+.opacity-layer p {
+	display: none;
+}
+
+.scene {
+    margin: 0% 20%;
+    position: relative;
+    width: 470px;
+    height: 140px;
+    perspective: 5000px;
+}
+
+.veil {
+	margin: 40%;
+	color: black;
+	font-size: 3em;
+	font-family: 'Calibre-Medium', sans-serif;
+	letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.veil h3 {
+	padding: 30%;
+}
+
+.veil a {
+	text-decoration: none;
+	color: #fa4c25;
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
+	font-size: 4rem;
+	text-transform: none;
+	letter-spacing: 0;
+	margin: 0;
+}
+
+.veil a:hover {
+	font-style: italic;
+}
+
+
+
+.intro {
+	background: #985587;
+	/*border: 30px solid #ddc954;*/
+	font-family: 'MiloSerifOT-Bold', serif;
+	position: relative;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+}
+
+.intro img {
+	max-width: "80%";
+}
+
+button {
+    width: 40%;
+	padding: 10px;
+	text-align: center;
+	border: none;
+	background: #fa4c25;
+}
+
+button img {
+	max-width: 100%;
+}
+
+.previous-button {
+	font-family: 'Calibre-Medium', sans-serif;
+	position: fixed;
+    top: -30%;
+    left: 0;
+	background: white;
+    
+}
+
+.next-button {
+    font-family: 'Calibre-Medium', sans-serif;
+	position: fixed;
+    top: -30%;
+    right: 0;
+	background: white;
+   
+}
+
+.scene3D > div {
+    margin: 2rem;
+}
+
+.scene3D > div h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+	text-align: center;
+	font-family: 'Calibre-Medium', sans-serif;
+	letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.portfolioOverall {
+	margin-top: 10%;
+	background: white;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-769);
+	transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+h2 {
+	font-family: 'MiloSerifOT-Bold', serif;
+}
+
+.carousel__cell {
+    position: absolute;
+    width: 440px;
+    height: 400px;
+    left: 30px;
+    top: 10px;
+    line-height: 116px;
+    color: white;
+    text-align: center;
+    font-family: 'Calibre-Medium', sans-serif;
+	background: rgba(255, 255, 34, .9);
+	background-color: rgba(255, 248, 231, 0);
+	/*border-top: 5px solid rgba(247, 92, 16, 1.00);*/
+	/*transform-style: preserve-3d;*/
+}
+
+.title_feature {
+	position: relative;
+	background: black;
+}
+
+.carousel_title {
+    position: relative;
+	background: black;
+    color: white;
+    font-size: 1em;
+    line-height: 1.3em;
+	display: none;
+}
+
+.carousel_title p {
+	background: black;
+	padding: 2%;
+}
+
+.carousel__cell.next {
+	
+}
+
+.carousel__cell.next .carousel_title {
+	display: inline;
+}
+
+.carousel__cell.next img {
+	border: 15px solid #fa4c25;
+}
+
+
+/*.carousel__cell p {
+    font-size: 2.5em;
+    letter-spacing: .3em;
+    text-align: center;
+    color: #f1ebb2;
+}*/
+
+
+
+.highlight {
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
+	text-align: center;
+}
+
+.carousel img {
+    max-width: 100%;
+	max-height: 100%;
+	border: 15px solid white;
+}
+
+
+.carousel-options {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 3%;
+}
+
+label {
+    font-family: 'Calibre-Regular', sans-serif;
+    font-weight: normal;
+    font-size: .7em;
+    padding: 0;
+    display: block;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #3f5b44;
+	padding-bottom: 1%;
+}
+
+form {
+	margin: 2%;
+	padding-top: 3%;
+	display: none;
+}
+
+.form-group {
+	text-align: right;
+}
+
+form button {
+	width: 100%;
+}
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
+.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(769px); }
+.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(769px); }
+.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(769px); }
+.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(769px); }
+.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(769px); }
+.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(769px); }
+
+/*--------Code from Vincent Humeau CSS 3D Demo-------*/
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC:900");
+:root {
+    --scenePerspective: 1;
+    --scenePerspectiveOriginX: 50;
+    --scenePerspectiveOriginY: 10;
+    --itemZ: 3;
+    --cameraSpeed: 150;
+    --cameraZ: 0;
+    --viewportHeight: 0;
+}
+
+.viewport {
+    height: calc(var(--viewportHeight) * 1px);
+}
+
+.viewport .scene3D-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
+    perspective: calc(var(--scenePerspective) * var(--cameraSpeed) * 1px);
+    -webkit-perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(var(--scenePerspectiveOriginY) * 1%);
+    perspective-origin: calc(var(--scenePerspectiveOriginX) * 1%) calc(var(--scenePerspectiveOriginY) * 1%);
+    will-change: perspective-origin;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.viewport .scene3D-container .scene3D {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(calc(var(--cameraZ) * 1px));
+    transform: translateZ(calc(var(--cameraZ) * 1px));
+    will-change: transform;
+}
+
+.viewport .scene3D-container .scene3D > div {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 40%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .viewport .scene3D-container .scene3D > div {
+        width: 45%;
+    }
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(2n) {
+    left: 0;
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(2n + 1) {
+    right: 0;
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(0) {
+    -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+    transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(1) {
+    -webkit-transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+    transform: translate3D(10%, -3%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(2) {
+    -webkit-transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+    transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(3) {
+    -webkit-transform: translate3D(5%, -44%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
+    transform: translate3D(5%, -44%, calc(var(--itemZ) * var(--cameraSpeed) * 3 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(4) {
+    -webkit-transform: translate3D(15%, -22%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
+    transform: translate3D(15%, -22%, calc(var(--itemZ) * var(--cameraSpeed) * 4 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(5) {
+    -webkit-transform: translate3D(10%, -6%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
+    transform: translate3D(10%, -6%, calc(var(--itemZ) * var(--cameraSpeed) * 5 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(6) {
+    -webkit-transform: translate3D(8%, -16%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
+    transform: translate3D(8%, -16%, calc(var(--itemZ) * var(--cameraSpeed) * 6 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(7) {
+    -webkit-transform: translate3D(3%, 20%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
+    transform: translate3D(3%, 20%, calc(var(--itemZ) * var(--cameraSpeed) * 7 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(8) {
+    -webkit-transform: translate3D(10%, 34%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
+    transform: translate3D(10%, 34%, calc(var(--itemZ) * var(--cameraSpeed) * 8 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(9) {
+    -webkit-transform: translate3D(-13%, 21%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
+    transform: translate3D(-13%, 21%, calc(var(--itemZ) * var(--cameraSpeed) * 9 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(10) {
+    -webkit-transform: translate3D(-3%, 47%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
+    transform: translate3D(-3%, 47%, calc(var(--itemZ) * var(--cameraSpeed) * 10 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(11) {
+    -webkit-transform: translate3D(14%, -20%, calc(var(--itemZ) * var(--cameraSpeed) * 11 * -1px));
+    transform: translate3D(14%, -20%, calc(var(--itemZ) * var(--cameraSpeed) * 11 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(12) {
+    -webkit-transform: translate3D(5%, 25%, calc(var(--itemZ) * var(--cameraSpeed) * 12 * -1px));
+    transform: translate3D(5%, 25%, calc(var(--itemZ) * var(--cameraSpeed) * 12 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(13) {
+    -webkit-transform: translate3D(-2%, -20%, calc(var(--itemZ) * var(--cameraSpeed) * 13 * -1px));
+    transform: translate3D(-2%, -20%, calc(var(--itemZ) * var(--cameraSpeed) * 13 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(14) {
+    -webkit-transform: translate3D(16%, 25%, calc(var(--itemZ) * var(--cameraSpeed) * 14 * -1px));
+    transform: translate3D(16%, 25%, calc(var(--itemZ) * var(--cameraSpeed) * 14 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(15) {
+    -webkit-transform: translate3D(-6%, 37%, calc(var(--itemZ) * var(--cameraSpeed) * 15 * -1px));
+    transform: translate3D(-6%, 37%, calc(var(--itemZ) * var(--cameraSpeed) * 15 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(16) {
+    -webkit-transform: translate3D(25%, -7%, calc(var(--itemZ) * var(--cameraSpeed) * 16 * -1px));
+    transform: translate3D(25%, -7%, calc(var(--itemZ) * var(--cameraSpeed) * 16 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(17) {
+    -webkit-transform: translate3D(11%, -25%, calc(var(--itemZ) * var(--cameraSpeed) * 17 * -1px));
+    transform: translate3D(11%, -25%, calc(var(--itemZ) * var(--cameraSpeed) * 17 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(18) {
+    -webkit-transform: translate3D(-7%, -37%, calc(var(--itemZ) * var(--cameraSpeed) * 18 * -1px));
+    transform: translate3D(-7%, -37%, calc(var(--itemZ) * var(--cameraSpeed) * 18 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(19) {
+    -webkit-transform: translate3D(12%, 22%, calc(var(--itemZ) * var(--cameraSpeed) * 19 * -1px));
+    transform: translate3D(12%, 22%, calc(var(--itemZ) * var(--cameraSpeed) * 19 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(20) {
+    -webkit-transform: translate3D(21%, 32%, calc(var(--itemZ) * var(--cameraSpeed) * 20 * -1px));
+    transform: translate3D(21%, 32%, calc(var(--itemZ) * var(--cameraSpeed) * 20 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(21) {
+    -webkit-transform: translate3D(6%, 47%, calc(var(--itemZ) * var(--cameraSpeed) * 21 * -1px));
+    transform: translate3D(6%, 47%, calc(var(--itemZ) * var(--cameraSpeed) * 21 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(22) {
+    -webkit-transform: translate3D(1%, -42%, calc(var(--itemZ) * var(--cameraSpeed) * 22 * -1px));
+    transform: translate3D(1%, -42%, calc(var(--itemZ) * var(--cameraSpeed) * 22 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(23) {
+    -webkit-transform: translate3D(7%, -42%, calc(var(--itemZ) * var(--cameraSpeed) * 23 * -1px));
+    transform: translate3D(7%, -42%, calc(var(--itemZ) * var(--cameraSpeed) * 23 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(24) {
+    -webkit-transform: translate3D(-13%, 49%, calc(var(--itemZ) * var(--cameraSpeed) * 24 * -1px));
+    transform: translate3D(-13%, 49%, calc(var(--itemZ) * var(--cameraSpeed) * 24 * -1px));
+}
+
+.viewport .scene3D-container .scene3D > div:nth-child(25) {
+    -webkit-transform: translate3D(12%, 43%, calc(var(--itemZ) * var(--cameraSpeed) * 25 * -1px));
+    transform: translate3D(12%, 43%, calc(var(--itemZ) * var(--cameraSpeed) * 25 * -1px));
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+body {
+    background-color: white;
+    color: #272935;
+    padding: 0;
+    margin: 0;
+}
+*/
+
+
+
+#modalContainer {
+	height: 100vh;
+	width: 100vw;
+	background-color: red;
+	opacity: 50%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
