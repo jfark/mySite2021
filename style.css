@@ -30,7 +30,7 @@ body {
     /*background: url("");
     background-size: 100%;
 	background-color: #fbeae1;*/
-	background: linear-gradient(55deg, #ffce00 0%, #1fc8db 51%, #9e98de 85%);
+	background: linear-gradient(55deg, #ffce00 0%, #fff 85%);
 }
 
 header {
@@ -50,7 +50,7 @@ header img {
 	font-family: 'Agrandir-GrandHeavy', sans-serif;
 	font-size: 4rem;
 	text-align: center;
-	color: #fa4c25;
+	color: white;
 }
 
 .site-directions {
