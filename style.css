@@ -43,7 +43,6 @@ header img {
 	left: 0;
 	max-width: 100%;
 	padding: 5%;
-	
 }
 
 .room-name {
@@ -80,6 +79,10 @@ header img {
 	font-family: 'Calibre-Medium', sans-serif;
 	letter-spacing: .2em;
     text-transform: uppercase;
+}
+
+.veil img {
+	max-width: 100%;
 }
 
 .veil h3 {
@@ -124,30 +127,8 @@ button {
 	background: #fa4c25;
 }
 
-button img {
-	max-width: 100%;
-}
-
-.previous-button {
-	font-family: 'Calibre-Medium', sans-serif;
-	position: fixed;
-    top: -30%;
-    left: 0;
-	background: white;
-    
-}
-
-.next-button {
-    font-family: 'Calibre-Medium', sans-serif;
-	position: fixed;
-    top: -30%;
-    right: 0;
-	background: white;
-   
-}
-
 .scene3D > div {
-    margin: 2rem;
+    /*margin: .5rem;*/
 }
 
 .scene3D > div h2 {
@@ -255,20 +236,6 @@ label {
 	padding-bottom: 1%;
 }
 
-form {
-	margin: 2%;
-	padding-top: 3%;
-	display: none;
-}
-
-.form-group {
-	text-align: right;
-}
-
-form button {
-	width: 100%;
-}
-
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(769px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(769px); }
 .carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(769px); }
@@ -286,8 +253,8 @@ form button {
     --scenePerspective: 1;
     --scenePerspectiveOriginX: 40;
     --scenePerspectiveOriginY: 20;
-    --itemZ: 1;
-    --cameraSpeed: 150;
+    --itemZ: 3;
+    --cameraSpeed: 100;
     --cameraZ: 0;
     --viewportHeight: 0;
 }
@@ -327,7 +294,7 @@ form button {
     position: absolute;
     display: block;
     width: 100%;
-    top: 20%;
+    top: -40%;
 }
 
 
