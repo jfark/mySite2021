@@ -31,50 +31,12 @@
 							<h3>Main Room, North Wall</h3>
 						</div>
 						
-						<div class="scene">
-							
-			                <div class="portfolioOverall" >
-								
-								<form v-on:submit.prevent="addProject" v-cloak>
-									<fieldset>
-										<legend>What would you add to this Barnes Ensemble? </legend>
-										<div class="form-group">
-											<label>Title: <input v-model="titleInput" type="text" /></label>
-											<label>Image URL: <input v-model="imageInput" type="text"/></label>
-											<label>Caption: <input v-model="captionInput" type="text"/></label>
-										</div>
-										<button type="submit">Add my work!</button>
-									</fieldset>
-								</form>
-								
-			                    <div class="projectOne" v-cloak>
-			                        <div :project="project" is="the-portfolio"></div>
-			                    </div>
-			                </div>
-						</div>
-						
 						<div class="veil">
 							<h3>Main Room, West Wall</h3>
 						</div>
 						
-						<div class="scene">
-			                <div class="portfolioOverall" >
-			                    <div class="projectTwo" v-cloak>
-			                        <div :project="project" is="the-portfolio"></div>
-			                    </div>
-			                </div>
-						</div>
-						
 						<div class="veil">
 							<h3>Main Room, East Wall</h3>
-						</div>
-						
-						<div class="scene">
-							<div class="portfolioOverall" >
-			                    <div class="projectThree" v-cloak>
-			                        <div :project="project" is="the-portfolio"></div>
-			                    </div>
-			                </div>
 						</div>
 						
 						<div class="veil">
