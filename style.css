@@ -30,8 +30,10 @@ body {
     /*background: url("");
     background-size: 100%;
 	background-color: #fbeae1;*/
-	background: linear-gradient(55deg, #ffce00 0%, #fff 85%);
+	background: linear-gradient(45deg, #4c679a 5%, #fcf9f1 85%);
 }
+
+
 
 header {
 	width: 100%;
@@ -73,6 +75,8 @@ header img {
 }
 
 .veil {
+	display: flex;
+	flex-direction: column;
 	margin: 40%;
 	color: black;
 	font-size: 3em;
@@ -82,41 +86,7 @@ header img {
 }
 
 .veil img {
-	max-width: 100%;
-}
-
-.veil h3 {
-	padding: 30%;
-}
-
-.veil a {
-	text-decoration: none;
-	color: #fa4c25;
-	font-family: 'Agrandir-GrandHeavy', sans-serif;
-	font-size: 4rem;
-	text-transform: none;
-	letter-spacing: 0;
-	margin: 0;
-}
-
-.veil a:hover {
-	font-style: italic;
-}
-
-
-
-.intro {
-	background: #985587;
-	/*border: 30px solid #ddc954;*/
-	font-family: 'MiloSerifOT-Bold', serif;
-	position: relative;
-	text-align: center;
-	font-size: 2em;
-	color: white;
-}
-
-.intro img {
-	max-width: "80%";
+	max-width: 200%;
 }
 
 button {
