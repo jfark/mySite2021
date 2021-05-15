@@ -1,0 +1,330 @@
+html {
+	height: 100vh;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	overflow: hidden;
+	border: 0px solid white;
+	max-width: 100%;
+	position: relative;
+	height: 100vh;
+}
+
+.directions {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	max-width: 50%;
+}
+
+.scroll-directions:hover .directions {
+	display: inline;
+}
+
+.jjfs::-webkit-scrollbar,.futurshuttl::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	color: black;
+	background: #F2FD7A;
+}
+
+h1 {
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:hover {
+	font-style: italic;
+}
+
+header a:visited {
+	color: black;
+}
+
+main {
+	display: flex;
+	overflow: hidden;
+	height: 100vh;
+	will-change: overflow;
+	border: 0px solid white;
+	max-width: 100%;
+	position: relative;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+.jjfs {
+	flex: 1;
+	flex-direction: column;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+	text-align: center;
+	background: white;
+	position: relative;
+	padding: 200px 0px 150px 0px;
+	max-width: 50%;
+	color: #CBE2CB;
+	border-top: 0;
+}
+
+.jjfs img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.jjfs h2 {
+	position: fixed;
+	top: 0%;
+	left: 3%;
+	margin: 0;
+	color: black;
+	z-index: 100;
+	background: #F2FD7A;
+}
+
+.jjfs h3 {
+	position: fixed;
+	max-width: 45%;
+	left: 3%;
+	top: 5%;
+	color: black;
+	z-index: 300;
+}
+
+.jjfs-list {
+	position: fixed;
+	left: 3%;
+	top: 12%;
+	z-index: 111;
+	line-height: 2.5em;
+	text-align: left;
+}
+
+.jjfs-list ul {
+	list-style-type: none;
+	transform: skewY(-20deg);
+	color: red;
+	padding: 0;
+	
+}
+
+.jjfs-list ul:hover {
+	color: black;
+}
+
+.jjfs-list li {
+	padding: 0;
+	margin: 0;
+}
+
+.jjfs-list a {
+	color: black;
+}
+
+.jjfs-list a:hover {
+	color: white;
+	background: black;
+}
+
+.posts {
+	align-items: center;
+	justify-content: center;
+}
+
+.music-post {
+	align-items: center;
+	justify-content: center;
+	padding: 0px 30px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.jjfs-caption {
+	position: absolute;
+	display: none;
+	color: black;
+	margin: 0;
+	padding: 10px;
+	left: 50%;
+	top: 35%;
+	background: white;
+	text-align: left;
+	transform: skewY(-20deg);
+}
+
+.fs-caption {
+	position: absolute;
+	display: none;
+	color: black;
+	margin: 0;
+	padding: 10px;
+	right: 50%;
+	top: 35%;
+	background: #F2FD7A;
+	text-align: left;
+	transform: skewY(20deg);
+}
+
+.music-post:hover figcaption{
+	display: inline;
+}
+
+figcaption a {
+	color: black;
+}
+
+.futurshuttl {
+	flex: 1;
+	flex-direction: column;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+	background: #F2FD7A;
+	position: relative;
+	padding: 200px 0px 150px 0px;
+	border-top: 0;
+	color: lightyellow;
+	text-align: center;
+}
+
+.futurshuttl img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.futurshuttl h2 {
+	position: fixed;
+	top: 0;
+	right: 3%;
+	margin: 0;
+	color: white;
+	z-index: 100;
+	background: black;
+}
+
+.futurshuttl h3 {
+	position: fixed;
+	max-width: 45%;
+	right: 3%;
+	top: 5%;
+	color: black;
+	text-align: right;
+	z-index: 111;
+}
+
+.futurshuttl h3 a {
+	text-decoration: underline;
+	color: black;
+}
+
+.futurshuttl h3 a:hover {
+	font-style: italic;
+}
+
+.futurshuttl h3 a:visited {
+	color: black;
+}
+
+.fs-list {
+	position: fixed;
+	right: 3%;
+	top: 12%;
+	z-index: 111;
+	line-height: 2.5em;
+	text-align: right;
+}
+
+.fs-list ul {
+	list-style-type: none;
+	transform: skewY(20deg);
+	color: black;
+}
+
+.fs-list ul:hover {
+	color: black;
+}
+
+.fs-list li {
+	padding: 0;
+	margin: 0;
+}
+
+.fs-list a {
+	color: black;
+}
+
+.fs-list a:hover {
+	color: white;
+	background: black;
+}
+
+main img {
+	height: 400px;	
+}
+
+footer h1 {
+	position: fixed;
+	bottom: 0;
+	left: 10%;
+	margin: 0;
+	color: black;
+	font-size: 4em;
+}
+
+footer {
+	transform: translate(0 50%);
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+	
+	
