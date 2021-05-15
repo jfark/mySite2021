@@ -418,3 +418,54 @@ label {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 482px) {
+	
+	.room-name {
+		display: block;
+		font-family: 'Agrandir-GrandHeavy', sans-serif;
+		font-size: 1.5rem;
+		text-align: center;
+		color: white;
+	}
+	
+	:root {
+	    --scenePerspective: .5;
+	    --scenePerspectiveOriginX: 30;
+	    --scenePerspectiveOriginY: 90;
+	    --itemZ: 1.5;
+	    --cameraSpeed: 500;
+	    --cameraZ: 0;
+	    --viewportHeight: 0;
+	}
+	
+	.viewport .scene3D-container .scene3D > div {
+	    position: absolute;
+	    display: block;
+	    width: 100%;
+	    top: -100%;
+	}
+	
+	.viewport .scene3D-container .scene3D > div:nth-child(2n) {
+	    left: 500;
+	}
+
+	.viewport .scene3D-container .scene3D > div:nth-child(2n + 1) {
+	    right: 0;
+	}
+	
+	.viewport .scene3D-container .scene3D > div:nth-child(0) {
+	    -webkit-transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+	    transform: translate3D(22%, 30%, calc(var(--itemZ) * var(--cameraSpeed) * 0 * -1px));
+	}
+
+	.viewport .scene3D-container .scene3D > div:nth-child(1) {
+	    -webkit-transform: translate3D(15%, 10%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+	    transform: translate3D(15%, 10%, calc(var(--itemZ) * var(--cameraSpeed) * 1 * -1px));
+	}
+
+	.viewport .scene3D-container .scene3D > div:nth-child(2) {
+	    -webkit-transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+	    transform: translate3D(-15%, -5%, calc(var(--itemZ) * var(--cameraSpeed) * 2 * -1px));
+	}
+}
