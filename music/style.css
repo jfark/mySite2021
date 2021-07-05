@@ -34,6 +34,14 @@ body {
     display: none;
 }
 
+.music-header-L {
+	top: 0;
+	left: 0;
+}
+
+.music-header-R {
+}
+
 header {
 	position: fixed;
 	bottom: 0;
@@ -208,7 +216,6 @@ figcaption a {
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: none;
-	background: #F2FD7A;
 	position: relative;
 	padding: 200px 0px 150px 0px;
 	border-top: 0;
